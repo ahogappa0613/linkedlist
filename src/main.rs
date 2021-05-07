@@ -16,7 +16,7 @@ impl Node {
 
     // 自分の前にnodeを追加する
     // selfがmoveする
-    // 返却値はself
+    // 返却値は(selfを連結した)p
     fn insert(self, p: Self) -> Self {
         Self {
             next: Some(Box::new(self)),
